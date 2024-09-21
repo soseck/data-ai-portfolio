@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon, TwitterIcon, Menu } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, TwitterIcon, Menu, Code } from 'lucide-react';
 import { LanguageContext } from '../LanguageContext';
 import { translations } from '../translations';
 
@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="bg-gray-800 shadow-lg fixed w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-xl md:text-2xl font-bold text-teal-400">Ndeye Sokhna SECK</h1>
+        <Code className="h-8 w-8 text-teal-400" />
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
             <li><Button variant="ghost" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
