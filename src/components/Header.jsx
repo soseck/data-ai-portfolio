@@ -29,9 +29,10 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
             <li><Button variant="ghost" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('services')}>{t.services}</Button></li>
+            <li><Button variant="ghost" onClick={() => scrollToSection('about')}>{t.about}</Button></li>
+            <li><Button variant="ghost" onClick={() => scrollToSection('experience')}>{t.experience}</Button></li>
+            <li><Button variant="ghost" onClick={() => scrollToSection('education')}>{t.education}</Button></li>
             <li><Button variant="ghost" onClick={() => scrollToSection('skills')}>{t.skills}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('projects')}>{t.projects}</Button></li>
             <li><Button variant="ghost" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
           </ul>
         </nav>
@@ -57,9 +58,10 @@ const Header = () => {
         <nav className="md:hidden bg-gray-800 py-4">
           <ul className="flex flex-col items-center space-y-4">
             <li><Button variant="ghost" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('services')}>{t.services}</Button></li>
+            <li><Button variant="ghost" onClick={() => scrollToSection('about')}>{t.about}</Button></li>
+            <li><Button variant="ghost" onClick={() => scrollToSection('experience')}>{t.experience}</Button></li>
+            <li><Button variant="ghost" onClick={() => scrollToSection('education')}>{t.education}</Button></li>
             <li><Button variant="ghost" onClick={() => scrollToSection('skills')}>{t.skills}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('projects')}>{t.projects}</Button></li>
             <li><Button variant="ghost" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
           </ul>
           <div className="flex justify-center space-x-4 mt-4">
