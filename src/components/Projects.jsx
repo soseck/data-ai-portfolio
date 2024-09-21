@@ -1,12 +1,22 @@
-import React, { useContext } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import React, { useContext, useCallback } from 'react';
 import { LanguageContext } from '../LanguageContext';
 import { translations } from '../translations';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import CarouselCard from './CarouselCard';
 
 const Projects = () => {
   const { language } = useContext(LanguageContext);
   const t = translations[language];
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   const projects = [
     { 
@@ -33,23 +43,18 @@ const Projects = () => {
     <section id="projects" className="py-16 md:py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-teal-400">{t.projectsTitle}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {projects.map((project, index) => (
-            <Card key={index} className="bg-gray-700 border-teal-400 hover:border-teal-300 transition-colors overflow-hidden">
-              <img src={project.image} alt={project.title} className="w-full h-40 md:h-48 object-cover" />
-              <CardHeader>
-                <CardTitle className="text-xl md:text-2xl text-white">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm md:text-base text-gray-300 mb-4">{project.description}</p>
-                <Button asChild>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full bg-teal-500 hover:bg-teal-600 text-white">
-                    {language === 'en' ? "View Project" : "Voir le Projet"}
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="embla overflow-hidden" ref={emblaRef}>
+          <div className="embla__container flex">
+            {projects.map((project, index) => (
+              <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 px-4">
+                <CarouselCard item={project} type="project" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="flex justify-center mt-4">
+          <button onClick={scrollPrev} className="mx-2 p-2 bg-teal-500 text-white rounded-full">Prev</button>
+          <button onClick={scrollNext} className="mx-2 p-2 bg-teal-500 text-white rounded-full">Next</button>
         </div>
       </div>
     </section>
