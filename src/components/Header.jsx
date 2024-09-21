@@ -25,10 +25,7 @@ const Header = () => {
   return (
     <header className="bg-gray-800 shadow-lg fixed w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src="/ProfilePic.png" alt="Ndeye Sokhna SECK" className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-3 object-cover" />
-          <h1 className="text-xl md:text-2xl font-bold text-teal-400">Ndeye Sokhna SECK</h1>
-        </div>
+        <h1 className="text-xl md:text-2xl font-bold text-teal-400">Ndeye Sokhna SECK</h1>
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
             <li><Button variant="ghost" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
