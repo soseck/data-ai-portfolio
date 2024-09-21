@@ -1,25 +1,47 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
-    { title: "E-commerce Analytics", description: "Increased sales by 25% through data-driven recommendations." },
-    { title: "Financial Forecasting", description: "Developed a model with 95% accuracy for revenue predictions." },
-    { title: "Customer Segmentation", description: "Identified key customer groups for targeted marketing campaigns." },
+    { 
+      title: "E-commerce Analytics", 
+      description: "Increased sales by 25% through data-driven recommendations.",
+      image: "/placeholder.svg",
+      link: "#"
+    },
+    { 
+      title: "Financial Forecasting", 
+      description: "Developed a model with 95% accuracy for revenue predictions.",
+      image: "/placeholder.svg",
+      link: "#"
+    },
+    { 
+      title: "Customer Segmentation", 
+      description: "Identified key customer groups for targeted marketing campaigns.",
+      image: "/placeholder.svg",
+      link: "#"
+    },
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id="projects" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Recent Projects</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-teal-400">Recent Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-gray-700 border-teal-400 hover:border-teal-300 transition-colors overflow-hidden">
+              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
+                <CardTitle className="text-2xl text-white">{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>{project.description}</p>
+                <p className="text-gray-300 mb-4">{project.description}</p>
+                <Button asChild>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full bg-teal-500 hover:bg-teal-600 text-white">
+                    View Project
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}

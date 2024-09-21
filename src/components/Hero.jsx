@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+    <section id="home" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-32 pt-40">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Data-Driven Insights</h1>
-        <p className="text-xl mb-8">Transforming raw data into actionable strategies</p>
-        <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">Get Started</Button>
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">Data-Driven Insights</h1>
+        <p className="text-xl mb-8">Transforming raw data into actionable strategies for business growth</p>
+        <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">Download CV</Button>
       </div>
     </section>
   );
