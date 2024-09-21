@@ -5,9 +5,9 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-16 md:py-20 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-teal-400">Get in Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-teal-400">Get in Touch</h2>
         <div className="max-w-md mx-auto">
           <form className="space-y-4">
             <Input type="text" placeholder="Your Name" className="bg-gray-800 text-white border-gray-700 focus:border-teal-400" />
