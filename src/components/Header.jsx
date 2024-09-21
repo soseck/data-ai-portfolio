@@ -26,8 +26,8 @@ const Header = () => {
     <header className="bg-gray-800 shadow-lg fixed w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/placeholder.svg" alt="Profile" className="w-8 h-8 md:w-10 md:h-10 rounded-full mr-3" />
-          <h1 className="text-xl md:text-2xl font-bold text-teal-400">Data Consultant</h1>
+          <img src="/ndeye-sokhna-seck.jpg" alt="Ndeye Sokhna SECK" className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-3 object-cover" />
+          <h1 className="text-xl md:text-2xl font-bold text-teal-400">Ndeye Sokhna SECK</h1>
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
