@@ -16,16 +16,6 @@ export const translations = {
     dataManagement: "Data Management",
     dataManagementDesc: "Organize and optimize your data infrastructure for efficiency.",
     skillsTitle: "Skills",
-    skills: {
-      python: "Python",
-      machinelearning: "Machine Learning / Deep Learning",
-      dataanalysis: "Data Analysis",
-      mlops: "MLOps / DevOps",
-      cloudcomputing: "Cloud Computing (Azure)",
-      fullstackdevelopment: "Fullstack Web Development",
-      bigdata: "Big Data",
-      generativeai: "Generative AI"
-    },
     projectsTitle: "Experiences & Projects",
     contactTitle: "Get in Touch",
     yourName: "Your Name",
@@ -116,16 +106,6 @@ export const translations = {
     dataManagement: "Gestion des Données",
     dataManagementDesc: "Organiser et optimiser votre infrastructure de données pour l'efficacité.",
     skillsTitle: "Compétences",
-    skills: {
-      python: "Python",
-      machineLearning: "Apprentissage automatique / Apprentissage profond",
-      dataAnalysis: "Analyse de données",
-      mlops: "MLOps / DevOps",
-      cloudComputing: "Cloud Computing (Azure)",
-      fullstackDev: "Développement Web Fullstack",
-      bigData: "Big Data",
-      generativeAI: "IA Générative"
-    },
     projectsTitle: "Expériences & Projets",
     contactTitle: "Contactez-nous",
     yourName: "Votre Nom",
