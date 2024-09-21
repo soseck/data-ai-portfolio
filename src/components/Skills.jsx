@@ -8,12 +8,14 @@ const Skills = () => {
   const t = translations[language];
 
   const skills = [
-    { name: t.dataAnalysis, level: 90 },
-    { name: t.predictiveModeling, level: 85 },
-    { name: "Data Visualization", level: 80 },
-    { name: "Statistical Modeling", level: 75 },
     { name: "Python", level: 95 },
-    { name: "SQL", level: 85 },
+    { name: "Machine Learning / Deep Learning", level: 90 },
+    { name: "Data Analysis", level: 90 },
+    { name: "MLOps / DevOps", level: 85 },
+    { name: "Cloud Computing (Azure)", level: 80 },
+    { name: "Fullstack Web Development", level: 75 },
+    { name: "Java", level: 70 },
+    { name: "C++", level: 65 },
   ];
 
   return (

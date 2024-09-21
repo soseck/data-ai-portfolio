@@ -17,20 +17,17 @@ const CarouselCard = ({ item, type }) => {
         </CardContent>
       </Card>
     );
-  } else if (type === 'project') {
+  } else if (type === 'experience') {
     return (
       <Card className="bg-gray-700 border-teal-400 hover:border-teal-300 transition-colors overflow-hidden h-full">
-        <img src={item.image} alt={item.title} className="w-full h-40 md:h-48 object-cover" />
         <CardHeader>
           <CardTitle className="text-xl md:text-2xl text-white">{item.title}</CardTitle>
+          <p className="text-sm text-teal-400">{item.period}</p>
         </CardHeader>
         <CardContent>
           <p className="text-sm md:text-base text-gray-300 mb-4">{item.description}</p>
-          <Button asChild>
-            <a href={item.link} target="_blank" rel="noopener noreferrer" className="w-full bg-teal-500 hover:bg-teal-600 text-white">
-              {item.language === 'en' ? "View Project" : "Voir le Projet"}
-            </a>
-          </Button>
+          <p className="text-sm text-teal-400 mb-2">Technologies:</p>
+          <p className="text-sm text-gray-300">{item.technologies}</p>
         </CardContent>
       </Card>
     );

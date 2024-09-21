@@ -18,24 +18,41 @@ const Projects = () => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  const projects = [
-    { 
-      title: language === 'en' ? "E-commerce Analytics" : "Analyse E-commerce", 
-      description: language === 'en' ? "Increased sales by 25% through data-driven recommendations." : "Augmentation des ventes de 25% grâce à des recommandations basées sur les données.",
+  const experiences = [
+    {
+      title: "Inferensia",
+      period: "Juillet 2022 – Aujourd'hui",
+      description: "Optimisation de la performance des modules de détection de fraude, POCs et expérimentations d'approches par l'IA, développement et intégration de modules de conformité.",
+      technologies: "Python, MLOps (MLFlow, Airflow) / DevOps (Docker, Kubernetes), Spark, MinIO, Angular, Flask",
       image: "/placeholder.svg",
-      link: "#"
     },
-    { 
-      title: language === 'en' ? "Financial Forecasting" : "Prévisions Financières", 
-      description: language === 'en' ? "Developed a model with 95% accuracy for revenue predictions." : "Développement d'un modèle avec une précision de 95% pour les prévisions de revenus.",
+    {
+      title: "Relyens",
+      period: "Juillet 2022 - Août 2023",
+      description: "Collecte et traitement de données, développement d'outils de cartographie et de recherche, intégration de fonctionnalités de ML.",
+      technologies: "Python, Machine Learning, Deep Learning, NumPy, Pandas, Dash, Selenium, BeautifulSoup",
       image: "/placeholder.svg",
-      link: "#"
     },
-    { 
-      title: language === 'en' ? "Customer Segmentation" : "Segmentation Client", 
-      description: language === 'en' ? "Identified key customer groups for targeted marketing campaigns." : "Identification des groupes de clients clés pour des campagnes marketing ciblées.",
+    {
+      title: "Cetim",
+      period: "Septembre 2020 - Juin 2022",
+      description: "Définition des besoins SI/Data, design de l'architecture SI (Edge/Cloud Azure), suivi de l'implémentation des services.",
+      technologies: "Python, Pytables, Plotly, Azure (Edge/Cloud), MLOps/DevOps, Conteneurisation",
       image: "/placeholder.svg",
-      link: "#"
+    },
+    {
+      title: "Amadeus",
+      period: "Janvier 2019 - Juin 2020",
+      description: "Conception d'une application de détection d'anomalies, traitement des logs, visualisation des KPIs, automatisation du pipeline, conception fullstack.",
+      technologies: "Scikit Learn, Python, C++, Fullstack Web Development",
+      image: "/placeholder.svg",
+    },
+    {
+      title: "CNRS",
+      period: "Avril 2018 - Octobre 2018",
+      description: "Refactoring et intégration d'outils pour une plateforme de modélisation de réseau de gènes.",
+      technologies: "Java, Bio-informatique",
+      image: "/placeholder.svg",
     },
   ];
 
@@ -45,9 +62,9 @@ const Projects = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-teal-400">{t.projectsTitle}</h2>
         <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex">
-            {projects.map((project, index) => (
+            {experiences.map((experience, index) => (
               <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 px-4">
-                <CarouselCard item={project} type="project" />
+                <CarouselCard item={experience} type="experience" />
               </div>
             ))}
           </div>
