@@ -14,7 +14,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillsData.map((skill, index) => (
             <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-white mb-4">{skill.name}</h3>
+              <h3 className="text-xl font-semibold text-white mb-4">{t.skills[skill.name.toLowerCase().replace(/ /g, '')]}</h3>
               <div className="flex flex-wrap gap-4">
                 {skill.technologies.map((tech, techIndex) => (
                   <div key={techIndex} className="flex items-center">

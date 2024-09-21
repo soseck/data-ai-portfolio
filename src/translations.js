@@ -18,13 +18,13 @@ export const translations = {
     skillsTitle: "Skills",
     skills: {
       python: "Python",
-      machineLearning: "Machine Learning / Deep Learning",
-      dataAnalysis: "Data Analysis",
+      machinelearning: "Machine Learning / Deep Learning",
+      dataanalysis: "Data Analysis",
       mlops: "MLOps / DevOps",
-      cloudComputing: "Cloud Computing (Azure)",
-      fullstackDev: "Fullstack Web Development",
-      bigData: "Big Data",
-      generativeAI: "Generative AI"
+      cloudcomputing: "Cloud Computing (Azure)",
+      fullstackdevelopment: "Fullstack Web Development",
+      bigdata: "Big Data",
+      generativeai: "Generative AI"
     },
     projectsTitle: "Experiences & Projects",
     contactTitle: "Get in Touch",
