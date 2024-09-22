@@ -37,10 +37,10 @@ const Header = () => {
           </ul>
         </nav>
         <div className="hidden md:flex space-x-2 items-center">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.github.com/soseck/" target="_blank" rel="noopener noreferrer">
             <GithubIcon className="h-6 w-6 text-gray-300 hover:text-white" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/soseck/" target="_blank" rel="noopener noreferrer">
             <LinkedinIcon className="h-6 w-6 text-gray-300 hover:text-white" />
           </a>
           <div className="flex items-center space-x-2 ml-4">
@@ -66,10 +66,10 @@ const Header = () => {
             <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
           </ul>
           <div className="flex justify-center space-x-4 mt-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.github.com/soseck/" target="_blank" rel="noopener noreferrer">
               <GithubIcon className="h-6 w-6 text-gray-300 hover:text-white" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/soseck/" target="_blank" rel="noopener noreferrer">
               <LinkedinIcon className="h-6 w-6 text-gray-300 hover:text-white" />
             </a>
           </div>

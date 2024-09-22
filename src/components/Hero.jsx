@@ -8,10 +8,19 @@ const Hero = () => {
   const { language } = useContext(LanguageContext);
   const t = translations[language];
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/CV.pdf';
+    link.download = 'CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-20 md:py-32 pt-32 md:pt-40">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center mb-8">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="w-80 h-80 md:w-96 md:h-96 object-cover shadow-lg rounded-full mx-auto" />
           </div>
@@ -21,11 +30,11 @@ const Hero = () => {
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4">{t.heroTitle}</h1>
             <p className="text-lg md:text-xl mb-8">{t.heroSubtitle}</p>
-            <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 mb-8">{t.downloadCV}</Button>
-            <div className="w-full">
-              <TechCarousel />
-            </div>
+            <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 mb-8" onClick={handleDownloadCV}>{t.downloadCV}</Button>
           </div>
+        </div>
+        <div className="w-full">
+          <TechCarousel />
         </div>
       </div>
     </section>
