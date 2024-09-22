@@ -42,7 +42,7 @@ const Hero = () => {
             <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100" onClick={handleDownloadCV}>{t.downloadCV}</Button>
           </div>
         </div>
-        <div className="w-full md:w-3/4 mx-auto">
+        <div className="w-full md:w-3/4 mx-auto mt-12 md:mt-16"> {/* Added padding space */}
           <TechCarousel />
         </div>
       </div>
