@@ -12,7 +12,7 @@ const Hero = () => {
     <section id="home" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-20 md:py-32 pt-32 md:pt-40">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <div className="mb-8">
-          <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="w-48 h-48 object-cover shadow-lg" />
+          <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="w-56 h-56 md:w-64 md:h-64 object-cover shadow-lg rounded-full" />
         </div>
         <div className="text-center">
           <p className="text-lg mb-4">
