@@ -28,7 +28,16 @@ const Hero = () => {
             <p className="text-lg mb-4">
               {language === 'en' ? "Hi, I am Sokhna" : "Sokhna, enchantée !"}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4">{t.heroTitle}</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4">
+              {language === 'en' ? (
+                t.heroTitle
+              ) : (
+                <>
+                  Consultante<br />
+                  Data & IA
+                </>
+              )}
+            </h1>
             <p className="text-lg md:text-xl mb-8">{t.heroSubtitle}</p>
             <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 mb-8" onClick={handleDownloadCV}>{t.downloadCV}</Button>
           </div>
