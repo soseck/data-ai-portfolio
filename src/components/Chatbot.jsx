@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Bot, X } from 'lucide-react';
+import { Bot, X, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -43,6 +43,9 @@ const Chatbot = () => {
           <CardContent className="flex-grow overflow-y-auto">
             {messages.map((message, index) => (
               <div key={index} className={`mb-2 ${message.sender === 'user' ? 'text-right' : 'text-left'}`}>
+                {message.sender === 'bot' && (
+                  <Bot className="h-4 w-4 inline-block mr-2 text-teal-500" />
+                )}
                 <span className={`inline-block p-2 rounded-lg ${message.sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}>
                   {message.text}
                 </span>
@@ -58,7 +61,9 @@ const Chatbot = () => {
                 onChange={(e) => setInput(e.target.value)}
                 className="flex-grow mr-2"
               />
-              <Button type="submit">Send</Button>
+              <Button type="submit" size="icon">
+                <Send className="h-4 w-4" />
+              </Button>
             </form>
           </CardFooter>
         </Card>
