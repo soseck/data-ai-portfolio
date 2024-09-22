@@ -20,15 +20,15 @@ const Hero = () => {
   return (
     <section id="home" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-20 md:py-32 min-h-screen flex flex-col justify-center">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-8 md:mb-12">
-          <div className="w-full md:w-1/3 mb-8 md:mb-0 flex items-center justify-center">
+        <div className="flex flex-col md:flex-row items-center mb-8 md:mb-12">
+          <div className="w-full md:w-1/2 mb-8 md:mb-0 flex items-center justify-center">
             <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="w-48 h-48 md:w-64 md:h-64 object-cover shadow-lg rounded-full" />
           </div>
-          <div className="w-full md:w-2/3 text-center md:text-left flex flex-col justify-between h-full">
-            <p className="text-base md:text-lg mb-4">
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <p className="text-base md:text-lg mb-2 md:mb-4">
               {language === 'en' ? "Hi, I am Sokhna" : "Sokhna, enchantée !"}
             </p>
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">
               {language === 'en' ? (
                 t.heroTitle
               ) : (
@@ -38,8 +38,8 @@ const Hero = () => {
                 </>
               )}
             </h1>
-            <p className="text-sm md:text-base mb-6">{t.heroSubtitle}</p>
-            <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 self-center md:self-start" onClick={handleDownloadCV}>{t.downloadCV}</Button>
+            <p className="text-sm md:text-base mb-4 md:mb-6">{t.heroSubtitle}</p>
+            <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100" onClick={handleDownloadCV}>{t.downloadCV}</Button>
           </div>
         </div>
         <div className="w-full md:w-3/4 mx-auto">
