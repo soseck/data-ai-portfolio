@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    home: "Home",
+    home: "Hi !",
     services: "Services",
     skills: "Skills",
     projects: "Experiences & Projects",
@@ -91,7 +91,7 @@ export const translations = {
     ]
   },
   fr: {
-    home: "Accueil",
+    home: "Salut !",
     services: "Services",
     skills: "Compétences",
     projects: "Projets",
