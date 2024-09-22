@@ -9,19 +9,19 @@ const TechCarousel = () => {
   const techFields = [
     {
       name: 'Data Analysis',
-      techs: ['Python', 'Pandas', 'NumPy', 'SQL', 'Tableau']
+      techs: ['Python', 'Pandas', 'Polars', 'NumPy', 'SQL', 'Plotly - Dash']
     },
     {
       name: 'Machine Learning / Deep Learning / LLM',
-      techs: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'Hugging Face', 'NLTK']
+      techs: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'LlamaIndex', 'Langchain', 'Ollama']
     },
     {
       name: 'MLOps / LLMOps',
-      techs: ['Docker', 'Kubernetes', 'MLflow', 'Airflow', 'Jenkins']
+      techs: ['Docker', 'Kubernetes', 'MLflow', 'Airflow']
     },
     {
       name: 'Cloud Computing',
-      techs: ['Azure', 'AWS', 'Google Cloud', 'Databricks', 'Snowflake']
+      techs: ['Azure', 'AWS']
     }
   ];
 

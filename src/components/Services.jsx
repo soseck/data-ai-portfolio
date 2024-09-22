@@ -12,6 +12,7 @@ const Services = () => {
     { title: t.dataAnalysis, icon: <BarChart2 className="h-10 w-10 md:h-12 md:w-12 mb-4 text-teal-400" />, description: t.dataAnalysisDesc },
     { title: t.predictiveModeling, icon: <TrendingUp className="h-10 w-10 md:h-12 md:w-12 mb-4 text-teal-400" />, description: t.predictiveModelingDesc },
     { title: t.dataManagement, icon: <Database className="h-10 w-10 md:h-12 md:w-12 mb-4 text-teal-400" />, description: t.dataManagementDesc },
+    { title: t.genAI, icon: <Database className="h-10 w-10 md:h-12 md:w-12 mb-4 text-teal-400" />, description: t.genAIDesc },
   ];
 
   return (
