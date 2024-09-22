@@ -7,10 +7,9 @@ const Footer = () => {
   const t = translations[language];
 
   return (
-    <footer className="bg-gray-800 text-white py-6 md:py-8">
+    <footer className="bg-gray-800 text-white py-4">
       <div className="container mx-auto px-4 text-center">
-        <p className="text-sm md:text-base">{t.footerText}</p>
-        <p className="mt-2 text-xs md:text-sm text-gray-400">{t.footerSubtext}</p>
+        <p className="text-sm">{t.footerText}</p>
       </div>
     </footer>
   );

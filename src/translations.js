@@ -22,8 +22,7 @@ export const translations = {
     yourEmail: "Your Email",
     yourMessage: "Your Message",
     sendMessage: "Send Message",
-    footerText: "© 2024 Data Consultant. All rights reserved.",
-    footerSubtext: "Designed with passion and expertise",
+    footerText: "Ndèye Sokhna SECK, Data & AI Consultant",
     experiences: [
       {
         company: "Inferensia",
@@ -112,8 +111,7 @@ export const translations = {
     yourEmail: "Votre Email",
     yourMessage: "Votre Message",
     sendMessage: "Envoyer le Message",
-    footerText: "© 2024 Consultant en Données. Tous droits réservés.",
-    footerSubtext: "Conçu avec passion et expertise",
+    footerText: "Ndèye Sokhna SECK, Consultante Data & IA",
     experiences: [
       {
         company: "Inferensia",
