@@ -26,7 +26,7 @@ const TechCarousel = () => {
   ];
 
   return (
-    <div className="embla overflow-hidden" ref={emblaRef}>
+    <div className="embla overflow-hidden mt-8 md:mt-0" ref={emblaRef}>
       <div className="embla__container flex">
         {techFields.map((field, index) => (
           <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 mr-4">
@@ -35,7 +35,7 @@ const TechCarousel = () => {
                 <h3 className="text-lg font-semibold text-teal-400 mb-2">{field.name}</h3>
                 <div className="flex flex-wrap gap-2">
                   {field.techs.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-gray-700 text-white px-2 py-1 text-sm">
+                    <span key={techIndex} className="bg-gray-700 text-white px-2 py-1 text-sm rounded">
                       {tech}
                     </span>
                   ))}
