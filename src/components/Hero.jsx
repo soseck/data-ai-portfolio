@@ -40,11 +40,9 @@ const Hero = () => {
             </h1>
             <p className="text-lg md:text-xl mb-8">{t.heroSubtitle}</p>
             <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 mb-8" onClick={handleDownloadCV}>{t.downloadCV}</Button>
-          </div>
-        </div>
-        <div className="flex justify-end">
-          <div className="w-full md:w-2/3">
-            <TechCarousel />
+            <div className="w-full md:w-1/2 mx-auto md:ml-auto">
+              <TechCarousel />
+            </div>
           </div>
         </div>
       </div>
