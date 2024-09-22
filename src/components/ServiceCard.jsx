@@ -11,7 +11,7 @@ const ServiceCard = ({ item }) => {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-sm md:text-base text-gray-300 px-2">{item.description}</p>
+        <p className="text-sm md:text-base text-gray-300">{item.description}</p>
       </CardContent>
     </Card>
   );

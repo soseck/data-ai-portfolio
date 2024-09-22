@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const CarouselCard = ({ item, type }) => {
   if (type === 'service') {
@@ -12,7 +13,7 @@ const CarouselCard = ({ item, type }) => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm md:text-base text-gray-300 px-2">{item.description}</p>
+          <p className="text-sm md:text-base text-gray-300">{item.description}</p>
         </CardContent>
       </Card>
     );
@@ -24,9 +25,9 @@ const CarouselCard = ({ item, type }) => {
           <p className="text-sm text-teal-400">{item.period}</p>
         </CardHeader>
         <CardContent>
-          <p className="text-sm md:text-base text-gray-300 mb-4 px-2">{item.description}</p>
+          <p className="text-sm md:text-base text-gray-300 mb-4">{item.description}</p>
           <p className="text-sm text-teal-400 mb-2">Technologies:</p>
-          <p className="text-sm text-gray-300 px-2">{item.technologies}</p>
+          <p className="text-sm text-gray-300">{item.technologies}</p>
         </CardContent>
       </Card>
     );
