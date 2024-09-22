@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="home" className="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-20 md:py-32 pt-32 md:pt-40">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 flex flex-col items-center mb-8 md:mb-0">
-          <img src="/ProfilePic.png" alt="Ndeye Sokhna SECK" className="rounded-full w-64 h-64 object-cover shadow-lg mb-4" />
+          <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="rounded-full w-50 h-50 object-cover shadow-lg mb-4" />
           <p className="text-lg font-semibold">N. Sokhna SECK</p>
         </div>
         <div className="md:w-1/2 text-center md:text-left">

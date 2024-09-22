@@ -38,7 +38,7 @@ export const translations = {
       },
       {
         company: "Relyens",
-        period: "July 2022 - August 2023",
+        period: "Sept. 2022 - March 2023",
         context: "In the context of a mission for Inferensia within an innovative and growing company, the main objective is to explore and valorize data for various use cases, working on their collection, processing, and analysis as well as the design of tools for expressed needs.",
         missions: [
           "Data collection in different formats from various departments and teams, open-source data, or internal storage.",
@@ -53,7 +53,7 @@ export const translations = {
       },
       {
         company: "Cetim",
-        period: "September 2020 - June 2022",
+        period: "April 2021 - June 2022",
         context: "As part of IoT data processing, visualization, and analysis, the team is responsible for defining and implementing the appropriate information system (IS) architecture. The process includes data collection, processing, and storage in h5 format with Pytables, their classification, and the generation of HTML files for prediction visualization using Plotly. The main objective is to define IS and Data needs for large-scale project implementation in the Azure environment, to analyze data to enable predictive maintenance using Machine Learning techniques.",
         missions: [
           "Definition of IS/Data needs according to expressed requirements and objectives.",
@@ -66,7 +66,7 @@ export const translations = {
       },
       {
         company: "Amadeus",
-        period: "January 2019 - June 2020",
+        period: "Sept. 2019 - Sept. 2020",
         context: "The design of an anomaly detection application during the generation of flight inventory files is at the heart of the concerns. This involves extracting and processing logs, deducing and visualizing KPIs via a graphical user interface (GUI), as well as automating the pipeline. Additionally, it is necessary to design and train an automatic anomaly detection model using machine learning with Scikit Learn. Finally, a full-stack design of the web application is planned.",
         missions: [
           "Extraction and processing of logs.",
@@ -128,7 +128,7 @@ export const translations = {
       },
       {
         company: "Relyens",
-        period: "Juillet 2022 - Août 2023",
+        period: "Sept. 2022 - Mars 2023",
         context: "Dans le contexte d'une mission pour le compte d'Inferensia au sein d'une entreprise innovante en pleine croissance, l'objectif principal consiste à explorer et valoriser les données pour divers cas d'usage, en travaillant sur leur collecte, traitement et analyse de même que la conception d'outils pour les besoins exprimés.",
         missions: [
           "Collecte de données sous différents formats depuis plusieurs démembrements et équipes, l'open source data ou stockages internes.",
@@ -143,7 +143,7 @@ export const translations = {
       },
       {
         company: "Cetim",
-        period: "Septembre 2020 - Juin 2022",
+        period: "Avril 2021 - Juin 2022",
         context: "Dans le cadre du traitement, de la visualisation et de l'analyse de données IoT, l'équipe est chargée de définir et mettre en place l'architecture système d'information (SI) adaptée. Le processus comprend la récolte, le traitement et la sauvegarde des données au format h5 avec Pytables, leur classification ainsi que la génération de fichiers HTML pour la visualisation des prédictions à l'aide de Plotly. L'objectif principal est de définir les besoins SI et Data pour la mise en place du projet à grande échelle dans l'environnement Azure, d'analyser les données pour permettre la maintenance prévisionnelle grâce à des techniques de Machine Learning.",
         missions: [
           "Définition des besoins SI/Data selon les besoins et objectifs exprimés.",
@@ -156,7 +156,7 @@ export const translations = {
       },
       {
         company: "Amadeus",
-        period: "Janvier 2019 - Juin 2020",
+        period: "Sept. 2019 - Sept. 2020",
         context: "La conception d'une application de détection d'anomalies lors de la génération de fichiers d'inventaire de vols est au cœur des préoccupations. Cela implique l'extraction et le traitement des logs, la déduction et la visualisation des KPIs via une interface utilisateur graphique (GUI), ainsi que l'automatisation du pipeline. De plus, il est nécessaire de concevoir et d'entraîner un modèle de détection automatique d'anomalies utilisant l'apprentissage automatique avec Scikit Learn. Enfin, une conception fullstack de l'application web est prévue.",
         missions: [
           "Extraction et traitement des logs.",
