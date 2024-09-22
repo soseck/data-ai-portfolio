@@ -94,7 +94,7 @@ export const translations = {
     home: "Salut !",
     services: "Services",
     skills: "Compétences",
-    projects: "Projets",
+    projects: "Expériences & Projets",
     contact: "Contact",
     heroTitle: "Consultante Data & IA",
     heroSubtitle: "Conception de solutions innovantes basées sur les données et l'IA de bout en bout.",
