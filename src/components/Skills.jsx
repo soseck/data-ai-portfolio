@@ -8,13 +8,12 @@ const Skills = () => {
 
   const skills = [
     "Python",
-    "Machine Learning / Deep Learning",
-    "Data Analysis",
-    "MLOps / DevOps",
-    "Cloud Computing (Azure)",
-    "Fullstack Web Development",
-    "Big Data",
-    "Generative AI"
+    "Data Analysis", 
+    "Data Management",
+    "Big Data"
+    "Machine Learning / Deep Learning / LLM",
+    "DevOps / MLOps / LLMOps",
+    "Cloud Computing"
   ];
 
   return (
