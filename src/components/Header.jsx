@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon, TwitterIcon, Menu, Code } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, Menu, Code } from 'lucide-react';
 import { LanguageContext } from '../LanguageContext';
 import { translations } from '../translations';
+import { Switch } from "@/components/ui/switch";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,12 +43,14 @@ const Header = () => {
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <LinkedinIcon className="h-6 w-6 text-gray-300 hover:text-white" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <TwitterIcon className="h-6 w-6 text-gray-300 hover:text-white" />
-          </a>
-          <Button variant="outline" onClick={toggleLanguage} className="ml-4">
-            {language === 'en' ? 'FR' : 'EN'}
-          </Button>
+          <div className="flex items-center space-x-2 ml-4">
+            <span className="text-sm text-gray-300">FR</span>
+            <Switch
+              checked={language === 'en'}
+              onCheckedChange={toggleLanguage}
+            />
+            <span className="text-sm text-gray-300">EN</span>
+          </div>
         </div>
         <Button variant="ghost" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Menu className="h-6 w-6" />
@@ -69,14 +72,14 @@ const Header = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <LinkedinIcon className="h-6 w-6 text-gray-300 hover:text-white" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <TwitterIcon className="h-6 w-6 text-gray-300 hover:text-white" />
-            </a>
           </div>
-          <div className="flex justify-center mt-4">
-            <Button variant="outline" onClick={toggleLanguage}>
-              {language === 'en' ? 'FR' : 'EN'}
-            </Button>
+          <div className="flex justify-center items-center space-x-2 mt-4">
+            <span className="text-sm text-gray-300">FR</span>
+            <Switch
+              checked={language === 'en'}
+              onCheckedChange={toggleLanguage}
+            />
+            <span className="text-sm text-gray-300">EN</span>
           </div>
         </nav>
       )}
