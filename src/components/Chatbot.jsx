@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Bot, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
@@ -8,6 +8,12 @@ const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
+
+  useEffect(() => {
+    if (isOpen && messages.length === 0) {
+      setMessages([{ text: "Hello ! Ask me anything about Sokhna's work and experiences.", sender: 'bot' }]);
+    }
+  }, [isOpen]);
 
   const toggleChatbot = () => setIsOpen(!isOpen);
 
@@ -19,7 +25,7 @@ const Chatbot = () => {
       // Here you would typically send the message to a backend API
       // and handle the response. For now, we'll just echo the message.
       setTimeout(() => {
-        setMessages(prev => [...prev, { text: `You said: ${input}`, sender: 'bot' }]);
+        setMessages(prev => [...prev, { text: `You asked about: ${input}`, sender: 'bot' }]);
       }, 1000);
     }
   };
