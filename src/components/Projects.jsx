@@ -38,7 +38,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-6">
           <button onClick={scrollPrev} className="mx-2 p-2 bg-teal-500 text-white rounded-full">&lt;</button>
           <button onClick={scrollNext} className="mx-2 p-2 bg-teal-500 text-white rounded-full">&gt;</button>
         </div>
