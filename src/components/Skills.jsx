@@ -10,7 +10,7 @@ const Skills = () => {
     "Python",
     "Data Analysis", 
     "Data Management",
-    "Big Data"
+    "Big Data",
     "Machine Learning / Deep Learning / LLM",
     "DevOps / MLOps / LLMOps",
     "Cloud Computing"
