@@ -42,8 +42,8 @@ const Hero = () => {
             <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 mb-8" onClick={handleDownloadCV}>{t.downloadCV}</Button>
           </div>
         </div>
-        <div className="flex justify-center mt-8">
-          <div className="w-full md:w-1/2">
+        <div className="flex justify-end">
+          <div className="w-full md:w-2/3">
             <TechCarousel />
           </div>
         </div>
