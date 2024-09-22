@@ -29,11 +29,11 @@ const Header = () => {
         <Code className="h-8 w-8 text-teal-400" />
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
-            <li><Button variant="ghost" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('services')}>{t.services}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('skills')}>{t.skills}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('projects')}>{t.projects}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('services')}>{t.services}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('skills')}>{t.skills}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('projects')}>{t.projects}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
           </ul>
         </nav>
         <div className="hidden md:flex space-x-2 items-center">
@@ -52,18 +52,18 @@ const Header = () => {
             <span className="text-sm text-gray-300">EN</span>
           </div>
         </div>
-        <Button variant="ghost" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <Button variant="ghost" className="md:hidden hover:bg-gray-700" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Menu className="h-6 w-6" />
         </Button>
       </div>
       {isMenuOpen && (
         <nav className="md:hidden bg-gray-800 py-4">
           <ul className="flex flex-col items-center space-y-4">
-            <li><Button variant="ghost" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('services')}>{t.services}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('skills')}>{t.skills}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('projects')}>{t.projects}</Button></li>
-            <li><Button variant="ghost" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('home')}>{t.home}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('services')}>{t.services}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('skills')}>{t.skills}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('projects')}>{t.projects}</Button></li>
+            <li><Button variant="ghost" className="hover:bg-gray-700" onClick={() => scrollToSection('contact')}>{t.contact}</Button></li>
           </ul>
           <div className="flex justify-center space-x-4 mt-4">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">

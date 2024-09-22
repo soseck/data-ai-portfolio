@@ -35,7 +35,7 @@ const TechCarousel = () => {
                 <h3 className="text-lg font-semibold text-teal-400 mb-2">{field.name}</h3>
                 <div className="flex flex-wrap gap-2">
                   {field.techs.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-gray-700 text-white px-2 py-1 rounded-full text-sm">
+                    <span key={techIndex} className="bg-gray-700 text-white px-2 py-1 text-sm">
                       {tech}
                     </span>
                   ))}
