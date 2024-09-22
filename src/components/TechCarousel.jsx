@@ -26,7 +26,7 @@ const TechCarousel = () => {
   ];
 
   return (
-    <div className="embla overflow-hidden mt-8 md:mt-0" ref={emblaRef}>
+    <div className="embla overflow-hidden mt-8" ref={emblaRef}>
       <div className="embla__container flex">
         {techFields.map((field, index) => (
           <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 mr-4">
