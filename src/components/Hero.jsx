@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="w-56 h-56 md:w-64 md:h-64 object-cover shadow-lg rounded-full mx-auto" />
+            <img src="/portfolio.jpeg" alt="Ndeye Sokhna SECK" className="w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg rounded-full mx-auto" />
           </div>
           <div className="md:w-1/2 text-center md:text-right">
             <p className="text-lg mb-4">
@@ -24,7 +24,7 @@ const Hero = () => {
             <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100">{t.downloadCV}</Button>
           </div>
         </div>
-        <div className="w-full max-w-4xl mx-auto">
+        <div className="w-full">
           <TechCarousel />
         </div>
       </div>
